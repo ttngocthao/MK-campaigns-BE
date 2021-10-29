@@ -15,11 +15,6 @@ app.use(express.json());
 
 app.use("/api/campaigns", campaignsRouter);
 
-if (process.env.NODE_ENV === "testWithFrontEnd") {
-  const testingRouter = require("./controllers/testing");
-  app.use("/api/testing", testingRouter);
-}
-
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);
 
