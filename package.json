@@ -1,12 +1,12 @@
 {
-  "name": "fullstackopen-2021-selftraining_part4",
+  "name": "backendExercise",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend exercise from Mobkoi, create 2 endpoints (get,post) and implement one unit test",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "start:test":"cross-env NODE_ENV=testWithFrontEnd node index.js",
+    "start:test": "cross-env NODE_ENV=testWithFrontEnd node index.js",
     "lint": "eslint",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=20000 --forceExit",
     "test:blog_api": "npm run test -- tests/blog_api.test.js ",
@@ -19,24 +19,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ttngocthao/fullstackopen-2021-selftraining_part4.git"
+    "url": "git+https://github.com/ttngocthao/MK-campaigns-BE.git"
   },
   "author": "Thao Truong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ttngocthao/fullstackopen-2021-selftraining_part4/issues"
+    "url": "https://github.com/ttngocthao/MK-campaigns-BE/issues"
   },
-  "homepage": "https://github.com/ttngocthao/fullstackopen-2021-selftraining_part4#readme",
+  "homepage": "https://github.com/ttngocthao/MK-campaigns-BE#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "http": "0.0.1-security",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.15",
-    "mongoose-unique-validator": "^2.0.3"
+    "node-fetch": "^2.6.1",
+    "qs": "^6.7.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

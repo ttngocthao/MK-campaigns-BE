@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/campaigns
+Content-Type: application/json
+
+{
+  "startDate": 1621863173300,
+  "endDate": 1622381520000,
+  "targetImpressions": 1234567890
+}
