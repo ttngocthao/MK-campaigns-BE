@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/ttngocthao/MK-campaigns-BE/issues"
   },
-  "homepage": "https://github.com/ttngocthao/MK-campaigns-BE#readme",
+  "homepage": "https://mobkoi-backend.herokuapp.com/",
   "dependencies": {
     "axios": "^0.24.0",
     "bcrypt": "^5.0.1",
