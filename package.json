@@ -4,7 +4,7 @@
   "description": "Backend exercise from Mobkoi, create 2 endpoints (get,post) and implement one unit test",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development nodemon index.js",
+    "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js",
     "start:test": "cross-env NODE_ENV=testWithFrontEnd node index.js",
     "lint": "eslint",
