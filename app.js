@@ -13,6 +13,10 @@ app.use(cors());
 // app.use(middleware.requestLogger);
 app.use(express.json());
 
+app.get("/", (_req, res) => {
+  res.send("Mobkoi Ex Backend");
+}); //for testing the hosting service
+
 app.use("/api/campaigns", campaignsRouter);
 
 app.use(middleware.unknownEndpoint);
